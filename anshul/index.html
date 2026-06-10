@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshul — My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-br from-purple-950 via-violet-950 to-indigo-950 text-white">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+      <span class="text-xl font-bold tracking-tight">Anshul</span>
+      <div class="flex gap-6 text-sm font-medium text-violet-200">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#gallery" class="hover:text-white">Gallery</a>
+        <a href="../index.html" class="hover:text-white">Back</a>
+      </div>
+    </nav>
+    <section class="mx-auto max-w-6xl px-6 pb-20 pt-10 text-center md:pb-28 md:pt-14">
+      <div class="mx-auto h-36 w-36 overflow-hidden rounded-full ring-4 ring-violet-400/30">
+        <img
+          src="../images/haha.jpeg"
+          alt="Anshul"
+          class="h-full w-full object-cover"
+          onerror="this.onerror=null; this.src='../photo.jpg';"
+        />
+      </div>
+      <h1 class="mt-8 text-4xl font-extrabold tracking-tight sm:text-5xl">Hi, I'm Anshul</h1>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-violet-100">
+        स्वागत है आपका, मेरा दूसरा नाम है हाहाहाहा
+      </p>
+    </section>
+  </header>
+
+  <!-- About / Text sections -->
+  <section id="about" class="mx-auto max-w-6xl px-6 py-20">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-slate-900">About me</h2>
+      <p class="mt-3 text-slate-600">Add your story, skills, and intro here.</p>
+    </div>
+
+    <div class="mt-14 grid gap-8 lg:grid-cols-2">
+      <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <h3 class="text-xl font-semibold text-slate-900">Who I am</h3>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+                नमस्कार!
+                
+                बहुत समय पहले अमेरिका के घने जंगलों में एक भयानक दानव रहता था। एक दिन इंसानों ने उसे पकड़ लिया और अपने साथ ले आए। कुछ समय बाद उसे भारत भेज दिया गया, जहाँ वह कई वर्षों तक इधर-उधर भटकता रहा।
+                
+                फिर एक दयालु लुहार ने उसे अपने पास रख लिया। लेकिन उसकी असली किस्मत तब बदली जब गाँव गोद में रहने वाली मीना नाम की एक महिला ने उसे मात्र 1 किलो आटे के बदले खरीद लिया।
+                
+                तब से यह दानव हम सबके बीच एक साधारण इंसान बनकर रह रहा है। लोग उसे पहचान नहीं पाते, क्योंकि वह अपनी असली पहचान छिपाकर रखता है।
+                
+                उसका नाम है...
+                
+                <strong>अंशुल!</strong>
+        </p>
+      </article>
+
+      <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <h3 class="text-xl font-semibold text-slate-900">What I do</h3>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+            मैं अपने मामा के घर रहता हूँ और पढ़ाई करता हूँ।
+        </p>
+      </article>
+
+      <article class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm lg:col-span-2">
+        <h3 class="text-xl font-semibold text-slate-900">My journey</h3>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+                मैं बच्चों का बचपन छीनता हूँ और उनसे लड़ाई भी करता हूँ। hahahahaaa
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Photo gallery -->
+  <section id="gallery" class="bg-white py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-slate-900">My photos</h2>
+        <p class="mt-3 text-slate-600">Add image files in the <code class="rounded bg-slate-100 px-2 py-0.5 text-sm">anshul/images/</code> folder and update the paths below.</p>
+      </div>
+
+      <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
+          <img
+            src="images/haha.jpeg"
+            alt="Photo 1"
+            class="aspect-square w-full object-cover"
+            onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+          />
+          <div class="hidden flex aspect-square w-full items-center justify-center bg-violet-100 text-violet-600">
+            <span class="text-sm font-medium">pic1.jpg</span>
+          </div>
+          <figcaption class="p-4 text-sm text-slate-600">Caption for photo 1 — edit me</figcaption>
+        </figure>
+
+        <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
+          <img
+            src="images/anshul.jpg.jpeg"
+            alt="Photo 2"
+            class="aspect-square w-full object-cover"
+            onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+          />
+          <div class="hidden flex aspect-square w-full items-center justify-center bg-amber-100 text-amber-600">
+            <span class="text-sm font-medium">pic2.jpg</span>
+          </div>
+          <figcaption class="p-4 text-sm text-slate-600">Caption for photo 2 — edit me</figcaption>
+        </figure>
+
+        <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
+          <img
+            src="images/anshul.jpeg"
+            alt="Photo 3"
+            class="aspect-square w-full object-cover"
+            onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+          />
+          <div class="hidden flex aspect-square w-full items-center justify-center bg-sky-100 text-sky-600">
+            <span class="text-sm font-medium">pic3.jpg</span>
+          </div>
+          <figcaption class="p-4 text-sm text-slate-600">Caption for photo 3 — edit me</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-slate-900 text-slate-400">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 sm:flex-row">
+      <p class="text-sm font-semibold text-white">Anshul</p>
+      <p class="text-sm">© 2026 Anshul. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

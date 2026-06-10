@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshul — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-950 via-violet-950 to-indigo-950 text-white antialiased">
+
+  <main class="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-6 py-12">
+    <div class="w-full rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-sm">
+      <div class="mx-auto h-40 w-40 overflow-hidden rounded-full ring-4 ring-violet-400/40 ring-offset-4 ring-offset-transparent">
+        <img
+          src="images/columbina.jpg"
+          alt="Anshul"
+          class="h-full w-full object-cover"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <div class="hidden h-full w-full items-center justify-center bg-violet-600 text-5xl font-bold text-white">
+          A
+        </div>
+      </div>
+
+      <h1 class="mt-8 text-center text-2xl font-bold tracking-tight">Welcome to Manish di website </h1>
+      <p class="mt-2 text-center text-sm text-violet-200">Enter your name to continue</p>
+
+      <form id="name-form" class="mt-8 space-y-4">
+        <label for="name" class="sr-only">Your name</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          autocomplete="name"
+          class="w-full rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-violet-300 outline-none transition focus:border-violet-300 focus:ring-2 focus:ring-violet-400/50"
+        />
+        <p id="error-msg" class="hidden text-center text-sm text-rose-300">Name not recognized. Try again.</p>
+        <button
+          type="submit"
+          class="w-full rounded-xl bg-white px-4 py-3 font-semibold text-violet-900 transition hover:bg-violet-100"
+        >
+          Enter
+        </button>
+      </form>
+    </div>
+
+    <p class="mt-6 text-center text-xs text-violet-300/80">Add your photo as <code class="text-violet-200">photo.jpg</code> in this folder</p>
+  </main>
+
+  <script>
+    document.getElementById("name-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = document.getElementById("name").value.trim().toLowerCase();
+      var error = document.getElementById("error-msg");
+
+      if (name === "anshul") {
+        window.location.href = "anshul/index.html";
+        return;
+      }
+
+      error.classList.remove("hidden");
+    });
+
+    document.getElementById("name").addEventListener("input", function () {
+      document.getElementById("error-msg").classList.add("hidden");
+    });
+  </script>
+
+</body>
+</html>
